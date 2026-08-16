@@ -1,7 +1,8 @@
 :root {
     --creme: #FCF1E0;
     --roze: #F2D5C8;
-    --tekst: #4A3F3A;
+    --tekst: #443A36;
+    --wit: #FFFDF9;
 }
 
 
@@ -10,18 +11,27 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     background: var(--creme);
     color: var(--tekst);
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 
 header {
-    padding: 25px;
+    padding: 25px 30px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    background: rgba(252, 241, 224, 0.95);
+    z-index: 10;
 }
 
 
@@ -29,121 +39,260 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     color: var(--tekst);
+    font-size: 14px;
 }
 
 
-.hero {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    padding: 50px;
-}
-
-
-.hero-text {
-    max-width: 500px;
+nav a:hover {
+    opacity: 0.6;
 }
 
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
 }
 
 
 h1 {
-    font-size: 70px;
-    margin: 0;
+    font-size: clamp(60px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 15px 0 25px;
 }
 
 
 h2 {
-    font-size: 45px;
+    font-size: clamp(42px, 5vw, 60px);
+    line-height: 1;
+    margin-top: 10px;
 }
 
 
-.klein {
+h3 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+
+.eyebrow {
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 70px 30px;
+}
+
+
+.hero-text {
+    max-width: 550px;
+}
+
+
+.intro {
+    font-size: 19px;
+    max-width: 500px;
 }
 
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 70px 30px;
-}
-
-
-.button {
+.button,
+.shop-button {
     display: inline-block;
     background: var(--roze);
     color: var(--tekst);
-    padding: 12px 30px;
+    padding: 13px 28px;
     border-radius: 30px;
     text-decoration: none;
-    margin-top: 20px;
+    transition: 0.2s;
 }
 
 
-.boek {
+.button:hover,
+.shop-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.section {
+    padding: 100px 30px;
+}
+
+
+.section-inner {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.book-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 80px 50px;
     display: flex;
-    gap: 50px;
+    gap: 80px;
     align-items: center;
+    background: var(--roze);
 }
 
 
-.boek img {
-    width: 250px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+.book-image {
+    flex: 0 0 330px;
+    text-align: center;
+}
+
+
+.book-image img {
+    width: 280px;
+    max-width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.book-text {
+    flex: 1;
+}
+
+
+.book-text h2 {
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+
+.flaptekst {
+    font-size: 15px;
+}
+
+
+.available {
+    margin-top: 30px;
+}
+
+
+.shops {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.shop-button {
+    background: var(--creme);
+    font-size: 13px;
+}
+
+
+.news-section {
+    background: var(--wit);
 }
 
 
 .cards {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 
-article {
+.cards article {
     background: var(--roze);
-    padding: 25px;
-    border-radius: 15px;
+    padding: 30px;
 }
 
 
-#contact a {
-    margin-right: 20px;
-    color: var(--tekst);
+.contact-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 110px 30px;
+    text-align: center;
+}
+
+
+.contact-section > div {
+    max-width: 600px;
+    margin: auto;
 }
 
 
 footer {
     text-align: center;
     padding: 30px;
+    font-size: 13px;
 }
 
 
-@media(max-width:700px){
+@media (max-width: 750px) {
 
-    .hero,
-    .boek,
-    .cards {
+    header {
+        position: static;
+    }
+
+
+    nav a {
+        margin: 5px 8px;
+        display: inline-block;
+    }
+
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+        padding-top: 50px;
+    }
+
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+
+    .book-section {
+        margin: 40px 15px;
+        padding: 50px 25px;
         flex-direction: column;
+        gap: 40px;
     }
 
-    h1 {
-        font-size: 50px;
+
+    .book-text {
+        text-align: center;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .shops {
+        justify-content: center;
     }
 
 }
+
