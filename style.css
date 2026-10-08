@@ -296,3 +296,35 @@ footer {
 
 }
 
+    .shops {
+        justify-content: center;
+    }
+
+}
+
+
+/* Instagram */
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto 25px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.instagram-text {
+    text-align: center;
+}
+
+.instagram-text a {
+    font-weight: bold;
+}
