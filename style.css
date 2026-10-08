@@ -212,34 +212,47 @@ footer {
 
 /* INSTAGRAM */
 
+#instagram {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+#instagram h2 {
+    text-align: center;
+}
+
 .instagram-grid {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100%;
-    margin: 0 auto 30px;
+    margin: 40px auto 30px;
 }
 
 .instagram-grid a {
     display: block;
-    width: 180px;
-    height: 180px;
-    flex: 0 0 180px;
+    width: 200px;
+    height: 200px;
+    flex: 0 0 200px;
 }
 
 .instagram-grid img {
     display: block;
-    width: 180px;
-    height: 180px;
+    width: 200px !important;
+    height: 200px !important;
+    max-width: none !important;
     object-fit: cover;
     border-radius: 8px;
 }
 
 .instagram-text {
     text-align: center;
+    margin: 0 auto;
 }
 
 .instagram-text a {
@@ -291,21 +304,26 @@ footer {
         justify-content: center;
     }
 
+
     /* Instagram op mobiel */
 
+    #instagram {
+        padding: 70px 15px;
+    }
+
     .instagram-grid {
-        gap: 10px;
+        gap: 8px;
         justify-content: center;
     }
 
     .instagram-grid a {
-        width: 110px;
-        height: 110px;
-        flex: 0 0 110px;
+        width: 100px;
+        height: 100px;
+        flex: 0 0 100px;
     }
 
     .instagram-grid img {
-        width: 110px;
-        height: 110px;
+        width: 100px !important;
+        height: 100px !important;
     }
 }
