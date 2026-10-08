@@ -301,12 +301,25 @@ footer {
     }
 
 }
-
-
 .instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 130px);
+    display: flex;
     gap: 15px;
     justify-content: center;
     margin: 0 auto 25px;
+}
+
+.instagram-grid img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.instagram-text {
+    text-align: center;
+}
+
+.instagram-text a {
+    font-weight: bold;
 }
