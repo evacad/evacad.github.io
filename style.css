@@ -300,26 +300,27 @@ footer {
         justify-content: center;
     }
 
-}
 .instagram-grid {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin: 0 auto 25px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 15px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto 25px !important;
+}
+
+.instagram-grid a {
+    display: block !important;
+    width: 130px !important;
+    flex: 0 0 130px !important;
 }
 
 .instagram-grid img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
+    display: block !important;
+    width: 130px !important;
+    height: 130px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
 }
-
-.instagram-text {
-    text-align: center;
-}
-
-.instagram-text a {
-    font-weight: bold;
 }
