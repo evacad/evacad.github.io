@@ -305,8 +305,8 @@ footer {
 
 .instagram-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 130px);
     gap: 15px;
-    max-width: 600px;
+    justify-content: center;
     margin: 0 auto 25px;
 }
