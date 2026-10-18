@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eva Cadier | Alle links</title>
+    <meta name="description" content="Ontdek Zonder jou geen Ja!, luister naar de playlist en lees de recensies van Eva Cadier.">
+    <meta name="theme-color" content="#F2D5C8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --roze: #F2D5C8;
+            --roze-donker: #DDA99D;
+            --roze-licht: #FBEAE4;
+            --creme: #FCF1E0;
+            --wit: #FFFDF9;
+            --tekst: #443A36;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 35px 16px;
+            background: linear-gradient(
+                160deg,
+                var(--roze) 0%,
+                #F8E5DE 42%,
+                var(--creme) 100%
+            );
+            color: var(--tekst);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 470px;
+            margin: 0 auto;
+            padding: 34px 24px 28px;
+            text-align: center;
+            background: rgba(255, 253, 249, 0.86);
+            border: 1px solid rgba(255, 255, 255, 0.75);
+            border-radius: 30px;
+            box-shadow: 0 15px 45px rgba(100, 64, 58, 0.12);
+        }
+
+        .top-decoration {
+            color: var(--roze-donker);
+            font-size: 25px;
+            letter-spacing: 8px;
+            margin-bottom: 12px;
+        }
+
+        .book-cover {
+            display: block;
+            width: 160px;
+            max-height: 245px;
+            object-fit: contain;
+            margin: 0 auto 24px;
+            border: 5px solid white;
+            border-radius: 5px;
+            box-shadow: 0 12px 28px rgba(68, 58, 54, 0.18);
+        }
+
+        h1,
+        h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 500;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 52px;
+            line-height: 1.05;
+            color: #9D625D;
+        }
+
+        .subtitle {
+            margin: 10px 0 14px;
+            color: #956C65;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            max-width: 340px;
+            margin: 0 auto 28px;
+            font-size: 13px;
+        }
+
+        .section-title {
+            margin: 27px 0 13px;
+            color: #9D625D;
+            font-size: 30px;
+            line-height: 1.15;
+        }
+
+        .section-caption {
+            margin: -5px 0 15px;
+            color: #806D67;
+            font-size: 12px;
+        }
+
+        .link-button {
+            display: block;
+            width: 100%;
+            margin: 11px 0;
+            padding: 14px 16px;
+            border: 1px solid #E8C6BB;
+            border-radius: 30px;
+            background: var(--roze-licht);
+            color: var(--tekst);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.5;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .link-button.primary {
+            background: var(--roze-donker);
+            border-color: var(--roze-donker);
+            color: #3F302D;
+            font-weight: 600;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            background: var(--roze);
+        }
+
+        .link-button:focus-visible,
+        .website-link:focus-visible {
+            outline: 2px solid #9D625D;
+            outline-offset: 4px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 30px auto;
+            color: #C58F85;
+            font-size: 16px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #E8C6BB;
+        }
+
+        .website-link {
+            display: inline-block;
+            margin-top: 22px;
+            color: #95645D;
+            font-size: 12px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        footer {
+            margin-top: 27px;
+            color: #806D67;
+            font-size: 10px;
+        }
+
+        @media (max-width: 380px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 26px 17px 23px;
+                border-radius: 24px;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            .book-cover {
+                width: 140px;
+                max-height: 215px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .link-button {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="top-decoration" aria-hidden="true">♡ ✧ ♡</div>
+
+        <img
+            class="book-cover"
+            src="../boek.jpg"
+            alt="Boekomslag van Zonder jou geen Ja! van Eva Cadier"
+        >
+
+        <p class="subtitle">Auteur van feelgoodromans</p>
+        <h1>Eva Cadier</h1>
+
+        <p class="intro">
+            Verhalen over liefde, vriendschap en onverwachte wendingen.
+            Leuk dat je er bent! ♡
+        </p>
+
+        <h2 class="section-title">Mijn debuutroman</h2>
+        <p class="section-caption">Zin in een heerlijke feelgood?</p>
+
+        <a
+            class="link-button primary"
+            href="https://www.bruna.nl/boeken/zonder-jou-geen-ja-9789083656786"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ♡ Bestel Zonder jou geen Ja! bij Bruna
+        </a>
+
+        <a
+            class="link-button"
+            href="https://www.bol.com/nl/nl/p/zonder-jou-geen-ja/9300000344899422/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Bekijk het boek bij bol
+        </a>
+
+        <a
+            class="link-button"
+            href="https://www.kobo.com/nl/nl/ebook/zonder-jou-geen-ja-1"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Lees het e-book via Kobo
+        </a>
+
+        <div class="divider" aria-hidden="true">♡</div>
+
+        <h2 class="section-title">Meer van mij</h2>
+
+        <a
+            class="link-button"
+            href="https://open.spotify.com/playlist/1KIuzRsC03VF7IMs6DiWUb?si=0R2VOPssSMqtfWortKIH2g"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ♫ Luister naar de playlist van mijn boek
+        </a>
+
+        <a
+            class="link-button"
+            href="https://www.hebban.nl/boek/zonder-jou-geen-ja-eva-cadier"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ☆ Lees de recensies op Hebban
+        </a>
+
+        <a
+            class="link-button"
+            href="https://www.goodreads.com/book/show/256936999"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ♡ Bekijk het boek en de reviews op Goodreads
+        </a>
+
+        <a
+            class="link-button"
+            href="https://evacadier.nl/"
+        >
+            🌷 Bezoek mijn auteurswebsite
+        </a>
+
+        <a
+            class="link-button"
+            href="mailto:evacadier@gmail.com"
+        >
+            ✉ Stuur me een e-mail
+        </a>
+
+        <a
+            class="website-link"
+            href="https://www.instagram.com/evacadier.schrijft/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Volg @evacadier.schrijft op Instagram
+        </a>
+
+        <footer>
+            Met liefde geschreven ♡<br>
+            © 2026 Eva Cadier
+        </footer>
+
+    </main>
+</body>
+</html>
